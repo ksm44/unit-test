@@ -1,0 +1,6 @@
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "My action trigger"
+        required: true
