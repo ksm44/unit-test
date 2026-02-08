@@ -6,6 +6,7 @@ on:
       name:
         description: "My action trigger"
         required: true
+        default: "manual_trigger"
 
 jobs:
   build:
