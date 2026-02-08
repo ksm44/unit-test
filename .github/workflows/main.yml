@@ -1,0 +1,17 @@
+name: CI Pipeline
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "My action trigger"
+        required: true
+        default: "manual_trigger"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 #Клонирование репо
+      - name: Run a script
+        run: echo "Hello, GitHub Actions!"
