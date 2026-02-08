@@ -1,5 +1,11 @@
 name: CI Pipeline
-on: [push] #Запуск при push
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "My action trigger"
+        required: true
 
 jobs:
   build:
