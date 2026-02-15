@@ -1,4 +1,4 @@
-version: $(APPVEYOR_REPO_TAG_NAME)
+version: 1.0.4
 
 environment:
   nodejs_version: "18"
